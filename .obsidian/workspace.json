@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Specs.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Specs"
+              "title": "README"
             }
           }
         ]
@@ -168,11 +168,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "d0685d4319cb44f8",
+  "active": "b7302ff61470fb2e",
   "lastOpenFiles": [
     "assets/new_palette.png",
     "assets/palette.png",
-    "Specs.md",
+    "README.md",
     "assets/rgb332_palette.png",
     "assets/rgb332_palette.aseprite",
     "assets/vga_palette.png",
