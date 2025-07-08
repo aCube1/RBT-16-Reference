@@ -1,17 +1,29 @@
-- CPU: Motorola 68000 at ~8MHz.
-- RAM: 4MB; Not expandable.
+## Overview
+
+- CPU: Motorola 68010 at ~8MHz.
+- RAM: Shipped with 512KB of Static RAM. Eight(?) SRAM slots of 512KB, up 4MB max RAM.
+- ROM: TODO!
 - IO Ports:
   - 4 expansion slots
   - 2 game controllers
-  - Disk Drive
+  - PS/2 mouse/keyboard slot
+  - (3.5")SCSI Hard disk drive
+  - (3.5")DD Floppy disk drive
+- Video: TODO!
+- Audio: TODO!
 
 > NOTES:
-> (aCube) - RAM: The CPU can access 16MB of RAM, so I think it would be pretty useful if the RBT-16 can accept RAM expansion.
 > (aCube) - IO: Maybe we can add a SD card slot?
+> (aCube) - RAM: Decide how much RAM will be shipped by default, and how many SRAM
+> expansion slots will be part of the system.
+> (aCube) - RAM: Manage memory areas for each computer device.
+> (aCube) - ROM: Decide how much ROM will be shipped for the OS. And build the OS.
+> (aCube) - VIDEO: Choose video output connectors, eg: S-Video and VGA. Name the video
+> composer and signal adapter. Set it's capabilities and programmable interface.
 
 ---
 
-- PPU:
+- Video:
   - Generated via FPGA.
     - Resolution: Fixed 320x240 output resolution.
     - VRAM: Dedicated chip with 128KB of memory.
@@ -57,7 +69,7 @@ There's 4 palettes for each background and foreground layers; 4 palettes of 16 c
 
 ---
 
-- APU: Z80 running at 4MHz
+- APU: Z80 running at ~4MHz
   - PSG: 4 square and noise channels.
   - PCM: 4 sample channels; Sample Rate 8-bits.
 
